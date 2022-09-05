@@ -62,8 +62,8 @@ body{
     display: flex;   
     align-items: center;
     justify-content: space-between;
-    padding: 0 22px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    
 }
 
 .michell-img{
@@ -96,6 +96,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
+    cursor: pointer;
 }
 
 .share:active{
@@ -109,11 +110,11 @@ body{
     width: 100%;
     position: relative;
     height: 60px;
-    margin-top: -65px;
-    
+    margin-top: -85px;
+    background-color: var(--very-dark-grayish-blue); 
 }
 .modal{
-    background-color: var(--very-dark-grayish-blue);
+   
     display: flex;
     justify-content: space-between;
     padding: 20px 22px;
@@ -134,9 +135,84 @@ body{
     gap: 15px;
 }
 
+.icon{
+    cursor: pointer;
+}
+
 .modalClick{
     display: block;
- 
+
+}
+
+@media (min-width:1024px) {
+    .container-card{
+        width: 780px;
+        flex-direction: row;
+    }
+
+    .header-card{
+        height: 300px;
+    }
+
+    .main-card{
+        padding: 25px;
+    }
+
+    .paragrahp-1{
+        font-size: 24px;
+    }
+
+    .paragrahp-2{
+        font-size: 15px;
+    }
+
+    .footer-card{
+        margin-top: 0px;
+    }
+
+    .michell-img{
+        width: 10%;
+    }
+
+    .info{
+        padding-right: 185px;
+    }
+
+    .share{
+        margin-right: 20px;
+        height: 40px;
+    }
+    
+    .modal-container{
+        position: absolute;
+        width: 280px;
+        height: 60px;
+        border-radius: 8px;
+        margin-top: 130px;
+        margin-left: 550px;
+        
+    }
+
+    .modal{
+        align-items: center;
+        justify-content: space-evenly;
+       
+    }
+
+    .container-icons{
+        padding-right: 0;
+    }
+
+    .pointer{
+        position:absolute;
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent; 
+        border-right: 20px solid transparent; 
+        border-top: 25px solid hsl(217, 19%, 35%); 
+        margin-left: 145px;
+}
+
 }
 
 
